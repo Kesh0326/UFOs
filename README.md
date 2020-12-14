@@ -6,7 +6,7 @@ Aggregate UFO sighting data and provide user the ability to filter this data bas
 ## Results
 The webpage consists of 5 different search parameters for narrowing and analyzing UFO sighting data (Date, City, State, Country and Shape). User can enter a specific value that they're interesting in analyzing within the search fields provided and the results will be filtered based on their area of interest. There are also suggested input text provided in each of the search fields to help the user identify what type of value to enter. 
 
-![Lemon Grove UFO sighting]()
+![Lemon Grove UFO sighting](static/images/Lemon_Grove_UFO_Sighting.png)
 
 the image above shows that there was a UFO sighting in Lemon Grove, CA on Jan 1st, 2010 that lasted 15 minutes. The webpage also includes comments for each sighting as shown in the image above.
 
