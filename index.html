@@ -16,7 +16,7 @@
     />
 </head>
 
-<body class="bg bg-dark">
+<body class="bg-dark">
 
     <!-- Create a wrapper to group elements (title, paragraph, tables etc) -->
     <div class="wrapper">
@@ -49,28 +49,45 @@
         <!-- Create container and then rows to hold the filter and table -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
 
                     <!-- Build filter component using form tag to enable user input -->
-                    <form class="bg bg-dark">
+                    <form class="bg-dark">
                         <p>Filter Search
                         </p>
                         <!-- Create list tags to set up search by date and a button to execute the search -->
-                        <ul style="list-style-type:none" class="bg bg-dark">
+                        <ul class="list-group">
                             <!-- Add list items, one for the input and one for button -->
-                            <li class="bg bg-dark">
+                            <li class="list-group-item bg-dark">
                                 <label for="date">Enter Date</label>
-                                <input type="text" placeholder="1/10/2010" id="datetime" />
-                                
+                                <input type="text" placeholder="1/10/2010" id="datetime" /> 
                             </li>
-                            <li class="bg bg-dark">
-                                <!-- When the button is clicked, the input from earlier is picked up by our JavaScript code and then applied to the filter -->
-                                <button id="filter-btn" type="button" class="btn btn-light">Filter Table</button>
+                            
+                            <!-- Create list tags for city, state, country and shape -->
+                            <li class="list-group-item bg-dark">
+                                <label for="city">Enter a City</label>
+                                <input type="text" placeholder="roswell" id="city" /> 
                             </li>
+
+                            <li class="list-group-item bg-dark">
+                                <label for="state">Enter a State</label>
+                                <input type="text" placeholder="ca" id="state" /> 
+                            </li>
+
+                            <li class="list-group-item bg-dark">
+                                <label for="country">Enter a Country</label>
+                                <input type="text" placeholder="us" id="country" /> 
+                            </li>
+
+                            <li class="list-group-item bg-dark">
+                                <label for="shape">Enter a Shape</label>
+                                <input type="text" placeholder="circle" id="shape" /> 
+                            </li>
+                            
                         </ul>
                     </form>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <!-- Build table components -->
                     <table class="table table-striped">
                         <thead>
